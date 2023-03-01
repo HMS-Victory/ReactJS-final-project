@@ -1,0 +1,23 @@
+.heading{
+    display: flex;
+    text-align: center;
+    flex-direction: inherit;
+}
+.h2{
+    margin-top: 2rem;
+    font-size: 2.5rem;
+}
+.subtext{
+    margin-bottom: 10%;
+    font-size: 2.1rem;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.rules{
+    display: flex;
+    flex-direction: inherit;
+    gap: 1rem;
+}

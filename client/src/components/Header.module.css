@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Great+Vibes&display=swap');
+
+*{
+    margin: 0;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+    position: relative;
+}
+.title{
+    position: absolute;
+    top: 5%;
+    color: white;
+}
+.navigation{
+    color: white;
+    background-color: rgb(131, 131, 131);
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+}
+.navigation ul{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    gap: 3rem;
+    padding-bottom: 0.3rem;
+}
+.bottomBorder{
+    background-color: darkgray;
+    padding: 0.1rem;
+    width: 99.8%;
+    border-bottom: 2px solid rgb(156, 97, 15);
+    box-shadow: 0 15px 30px 5px rgba(0, 0, 0, 0.3);
+}
+.img{
+    height: 30rem;
+    width: 100%;
+}
+.navItem{
+    color: white;
+    text-decoration: none;
+    display: flex;
+}
+.navItem:hover{
+    filter:brightness(102%);
+    transform: scale(105%);
+}
+.title,.navItem{
+    font-family: 'Abril Fatface', cursive;
+}
