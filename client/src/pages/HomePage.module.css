@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Great+Vibes&display=swap");
+
+.ip {
+  font-size: 3rem;
+  background-color: whitesmoke;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.ip,
+.IP {
+  font-family: "Abril Fatface", cursive;
+}
+.moreInfo {
+  margin-top: 8rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.h2 {
+  margin-top: 2rem;
+  font-size: 3.5rem;
+  text-align: center;
+}
+.h3 {
+  margin-top: 2rem;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.p {
+  font-size: 1.5rem;
+}
+.edit {
+  border-radius: 5px;
+  background-color: rgb(41, 196, 41);
+  border-style: none;
+  width: 5rem;
+  height: 3rem;
+  font-size: 1.5rem;
+}
+.edit:hover {
+  cursor: pointer;
+}
