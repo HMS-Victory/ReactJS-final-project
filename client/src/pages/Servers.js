@@ -78,6 +78,7 @@ function Servers() {
             newServer={serverData}
             updateNewServer={updateServerData}
             NewServerHandler={NewServerHandler}
+            toggleModalStatus={toggleModalStatus}
           />
         )}
         <button className={styles.edit} onClick={toggleModalStatus}>
