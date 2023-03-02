@@ -6,6 +6,6 @@ Add your connection url for your mongodb database and the port and mirror the po
 then run 'npm start' in each of these two directories, (the server and the client directories)
 
 Everything I plan for this site is not yet functional, but all of the requirments in the assignment are being met at the moment.
-That is, it connects to MongoDB, it Reads data from said database, and displays it on the screen, 
+That is, it connects to MongoDB, It uses CRUD operations, it uses nodeJS it uses ReactJS, and Redux. It is in fact a MERN application.
 Once you open the site, and use the navigation to go to the 'servers' page. All of the necessary functionality (CRUD operations) on this page works.
 
