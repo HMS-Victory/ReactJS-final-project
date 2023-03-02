@@ -1,16 +1,23 @@
 import styles from "./Modal.module.css";
-import { updateServer } from "../actions/homePage";
+import { updateServer,newServer } from "../actions/homePage";
 import { useDispatch } from "react-redux";
 function NewServerModal(props) {
-  const dispatch=useDispatch();
+  const dispatch = useDispatch();
   const serverData = props.newServer;
   const setServerData = props.updateNewServer;
-  const id=props.id;
+  const id = props.id;
+
   function updateServerHandler(e) {
     e.preventDefault();
-    dispatch(updateServer(id, serverData));
-    props.toggleEditModalStatus();
+    if (props.toggleEditModalStatus) {
+      dispatch(updateServer(id, serverData));
+      props.toggleEditModalStatus();
+    }else{
+      dispatch(newServer(serverData))
+      props.toggleModalStatus();
+    }
   }
+
   return (
     <div className={styles.overlay}>
       <div className={styles.modal}>
@@ -43,12 +50,12 @@ function NewServerModal(props) {
               setServerData({ ...serverData, description: e.target.value });
             }}
           ></input>
-          <input
+          {/* <input
             type="file"
             onChange={(e) =>
-              setServerData({ ...serverData, screenshots:e.target.files })
+              setServerData({ ...serverData, screenshots: e.target.files })
             }
-          ></input>
+          ></input> */}
           <button
             className={styles.edit}
             type="submit"
